@@ -1,0 +1,2 @@
+ * as React from 'react';
+
