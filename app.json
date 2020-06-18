@@ -30,6 +30,7 @@
       "package": "com.idevelopitall.irunout",
       "versionCode": 1
     },
-    "description": ""
+    "description": "A mobile app written in React Native for use in calculating the amount of runout in rotating industrial machinery",
+    "githubUrl": "https://github.com/jbalthis/iRunout"
   }
 }
