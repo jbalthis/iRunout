@@ -16,6 +16,15 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "space-evenly",
+  },
+  cell: {
+    padding: 1,
+    flex:3,
+    borderColor: 'black',
+    borderWidth: 1,
+    justifyContent: "center",
+    alignItems: "center"
   },
   text: {
     margin:5,

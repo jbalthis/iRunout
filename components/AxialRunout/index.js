@@ -32,13 +32,7 @@ class AxialRunout extends Component {
       ((OFFSETS[3]-OFFSETS[7])/2)      
     ];  
   
-    alert(`***RUNOUT***\n
-            1-5: ${RUNOUT[0]}\n
-            2-6: ${RUNOUT[1]}\n
-            3-7: ${RUNOUT[2]}\n
-            4-8: ${RUNOUT[3]}`
-    );
-
+    
     const { navigate } = this.props.navigation;
     navigate('DataModal', {
       offsets: OFFSETS,

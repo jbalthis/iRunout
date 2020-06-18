@@ -8,6 +8,10 @@ const RFTextInput = ({ input: { onChange, value }}) => (
     onChangeText={onChange}
     value={value}
     style={{flex: 1}}
+    textStyle={{fontSize:25}}
+    textAlign="center"
+    maxLength={3}
+    keyboardType="numeric"
   />
 );
 

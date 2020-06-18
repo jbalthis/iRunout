@@ -7,6 +7,7 @@ import { Button, Layout, Text } from '@ui-kitten/components';
 
 import { Field } from 'redux-form';
 import RFTextView from '../../../RFTextInput';
+import styles from '../../../../styles';
 
 const AxialRunoutView = ({ handleSubmit }) => (
   
@@ -18,6 +19,11 @@ const AxialRunoutView = ({ handleSubmit }) => (
       paddingHorizontal: 10
       }}
   >
+  <Layout style={{marginBottom:50, marginTop:50}}>
+    <Text style={styles.text} category="h3">Dial Indicator Readings</Text>
+  </Layout>
+
+  <ScrollView style={{width:"100%"}}>
     <Layout style={{flexDirection: "row", alignItems: "center"}}>
       <Text style={{margin:5}} category='h6'>Station 1</Text>
       <Field
@@ -121,7 +127,7 @@ const AxialRunoutView = ({ handleSubmit }) => (
         onPress={handleSubmit}
       >Calculate</Button>
     </Layout>
-
+    </ScrollView>
   </Layout>
   
 ); 
