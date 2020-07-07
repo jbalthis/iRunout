@@ -1,12 +1,9 @@
-import React from 'react';
-import { Button, StyleSheet, View } from 'react-native';
+import * as React from 'react';
 import { Provider as StoreProvider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, Layout, Text } from '@ui-kitten/components';
-
-import styles from './styles';
+import { ApplicationProvider } from '@ui-kitten/components';
 
 import AppNavigator from './components/AppNavigator';
 
@@ -16,17 +13,16 @@ const rootReducer = combineReducers({
 });
 const store = createStore(rootReducer);
 
-
 export default class App extends React.Component {
   render() {
     return (
       
-      <StoreProvider store={store}>
-        <ApplicationProvider {...eva} theme={eva.dark}>       
-          <AppNavigator />
+        <ApplicationProvider {...eva} theme={eva.dark}>
+            <StoreProvider store={store}>      
+                <AppNavigator />
+            </StoreProvider>
         </ApplicationProvider>     
-      </StoreProvider>
-       
+      
     );
   }
 }

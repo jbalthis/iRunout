@@ -1,7 +1,6 @@
 import { PropTypes } from 'prop-types';
-import React from 'react';
-import { View, ScrollView } from 'react-native';
-import * as eva from '@eva-design/eva';
+import * as React from 'react';
+import { ScrollView } from 'react-native';
 import { Button, Layout, Text } from '@ui-kitten/components';
 
 

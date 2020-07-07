@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import AxialRunoutRF from './AxialRunoutRF';
-import { ApplicationProvider, Layout, Text } from '@ui-kitten/components';
 
 class AxialRunout extends Component {
  
@@ -9,8 +8,6 @@ class AxialRunout extends Component {
   };
     
   handleSubmit = ({ station01, station02, station03, station04, station05, station06, station07, station08, station11, station12, station13, station14, station15, station16, station17, station18 }) => {
-    
-    
     
     const OFFSETS = [
       ((-1*(500-station01)) - (-1*(500-station15))),

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as eva from '@eva-design/eva';
 import { Layout, Text, Button } from '@ui-kitten/components';
 
 import styles from '../../../styles';
