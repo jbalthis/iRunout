@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Input } from '@ui-kitten/components';
-import styles from './styles';
 
 const RFTextInput = ({ input: { onChange, value }}) => ( 
   <Input
